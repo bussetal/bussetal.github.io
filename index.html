@@ -42,6 +42,12 @@
       max-width: 720px;
       margin: 0 auto 32px;
     }
+    .download-buttons {
+      display: flex;
+      gap: 16px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
     .btn {
       display: inline-block;
       background: #2563eb;
@@ -50,6 +56,12 @@
       border-radius: 10px;
       text-decoration: none;
       font-weight: bold;
+    }
+    .btn.android {
+      background: #16a34a;
+    }
+    .btn.ios {
+      background: #374151;
     }
     .features {
       display: grid;
@@ -97,7 +109,19 @@
     agenda, notas, notificações e recursos Premium.
   </p>
 
-  <a class="btn" href="#" download>Baixar aplicativo</a>
+  <div class="download-buttons">
+    <a class="btn windows" href="LINK_WINDOWS_AQUI" download>
+      💻 Baixar para Windows
+    </a>
+
+    <a class="btn android" href="LINK_ANDROID_AQUI" download>
+      📱 Baixar para Android
+    </a>
+
+    <a class="btn ios" href="#" onclick="alert('Em breve disponível para iPhone (iOS).'); return false;">
+      🍎 Baixar para iPhone
+    </a>
+  </div>
 </section>
 
 <section class="features">
